@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "648f6c8f-68b5-4938-9d53-65d3aab6b37a",
+    "descricao": "A prática leva à perfeição. Não desista dos seus objetivos.",
+    "img": "https://picsum.photos/id/237/200/300",
+    "alt": "Cachorro olhando para o horizonte"
+  },
+  {
+    "_id": "a6c02ad5-8f10-4e5a-b841-e842fdbf8a24",
+    "descricao": "Tecnologia é a ponte para o futuro. Invista em conhecimento.",
+    "img": "https://picsum.photos/id/238/200/300",
+    "alt": "Paisagem urbana iluminada"
+  },
+  {
+    "_id": "fb90b9a1-32f2-4c26-81c3-9cc67b33b3b4",
+    "descricao": "Momentos simples trazem os maiores aprendizados.",
+    "img": "https://picsum.photos/id/239/200/300",
+    "alt": "Família reunida em um piquenique"
+  },
+  {
+    "_id": "03e90b5c-82df-4225-8a8f-cc7e0e3a3c5b",
+    "descricao": "A beleza da natureza inspira nossos dias.",
+    "img": "https://picsum.photos/id/240/200/300",
+    "alt": "Montanha cercada por neblina"
+  },
+  {
+    "_id": "b2f0e5db-004d-45b7-b7c6-97a3749fd0a2",
+    "descricao": "O caminho para o sucesso começa com pequenos passos.",
+    "img": "https://picsum.photos/id/241/200/300",
+    "alt": "Pessoa caminhando por uma trilha"
+  },
+  {
+    "_id": "ce22b7c5-e2f5-47e3-ae71-f7b928183ec6",
+    "descricao": "Desafios são oportunidades para crescer.",
+    "img": "https://picsum.photos/id/242/200/300",
+    "alt": "Escalada em um penhasco"
+  },
+  {
+    "_id": "d7384b3d-cd24-4e5b-a3b2-547d2346b7c8",
+    "descricao": "A leitura abre portas para novos mundos e ideias.",
+    "img": "https://picsum.photos/id/243/200/300",
+    "alt": "Livros empilhados em uma mesa"
+  },
+  {
+    "_id": "e9a3fc8d-1d02-41d9-8127-bc7de9e7a08f",
+    "descricao": "Criatividade é a alma da inovação.",
+    "img": "https://picsum.photos/id/244/200/300",
+    "alt": "Pinturas coloridas em uma parede"
+  },
+  {
+    "_id": "f8b7de45-5c49-4e56-8ac3-b04188c215c6",
+    "descricao": "Viajar é colecionar memórias inesquecíveis.",
+    "img": "https://picsum.photos/id/245/200/300",
+    "alt": "Avião sobrevoando um pôr do sol"
+  },
+  {
+    "_id": "07fbab0b-2c7d-4bc8-badc-d2741dd9dc07",
+    "descricao": "O aprendizado constante é a chave para o crescimento.",
+    "img": "https://picsum.photos/id/246/200/300",
+    "alt": "Estudante concentrado em um livro"
+  }
+]
