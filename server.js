@@ -2,6 +2,9 @@ import express from "express";
 import routes from "./src/routes/routes.js";
 // Cria uma instância do Express, que será o servidor web
 const app = express();
+
+app.use(express.static("uploads"))
+
 routes(app)
 
 

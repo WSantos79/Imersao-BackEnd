@@ -1,4 +1,6 @@
-import {getAlldados, criaPost} from "../models/models.js";
+import {getAlldados, criaPost, updatePost} from "../models/models.js";
+import fs from "fs"
+import gerarDescricaoComGemini from "../services/geminiService.js";
 
 function searchPostID(id) {
     return posts.findIndex((post) => {
@@ -25,10 +27,38 @@ export async function newpost(req, res) {
     
 }
 
+export async function updateNewPost(req, res) {
+    const id = req.params.id
+    const urlImg = `http://localhost:3000/${id}.png`
+    
+    try {        
+        const imageBuffer = fs.readFileSync(`uploads/${id}.png`)
+        const descricao = await gerarDescricaoComGemini(imageBuffer)
+        const post = {
+            descricao: descricao,
+            img: urlImg,
+            alt: req.body.alt
+        } 
+
+        const postCriado = await updatePost(id, post)
+        res.status(200).json(postCriado)
+
+    } catch (error) {
+        console.error(error.message)
+        res.status(500).json({"Erro": "Falha na requisição"})        
+    }   
+}
+
 export async function uploadImg(req, res) {
-    const novoPost = req.body
+    const novoPost = {
+        descricao: "",
+        img: req.file.originalname,
+        alt: ""
+    }
     try {
         const postCriado = await criaPost(novoPost)
+        const imgAtualizada = `uploads/${postCriado.insertedId}.png`
+        fs.renameSync(req.file.path, imgAtualizada)
         res.status(200).json(postCriado)
     } catch (error) {
         console.error(error.message)
