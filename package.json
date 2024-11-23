@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "ImersaoBack2024",
   "version": "1.0.0",
-  "description": "",
+  "description": "Projeto BackEnd feito durante a imersao Alura e Google Gemini 2024 ",
   "main": "index.js",
   "type": "module",
   "license": "AGPL-version-3.0",
@@ -13,14 +13,14 @@
   "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/WSantos79/Imersao-BackEnd"
   },
   "bugs": "",
   "keywords": [],
   "author": {
-    "name": "",
-    "email": "",
-    "url": ""
+    "name": "WSantos79",
+    "email": "wellingtonsantos7799@gmail.com",
+    "url": "https://www.linkedin.com/in/wellingtonsantos79/"
   },
   "contributors": [],
   "scripts": {

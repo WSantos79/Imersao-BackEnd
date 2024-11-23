@@ -22,18 +22,19 @@ export async function criaPost(novoPost) {
     // Seleciona a coleção 'seriados' dentro do banco de dados
     const colecao = db.collection('posts');
     
-    
-    return colecao.insertOne(novoPost)    
+    // Insere um novo documento (post) na coleção
+    return colecao.insertOne(novoPost)
 }
 
 export async function updatePost(id, newPost) {
-     // Seleciona o banco de dados 'imersao2024'
-     const db = conexao.db('imersao2024');
-     // Seleciona a coleção 'seriados' dentro do banco de dados
-     const colecao = db.collection('posts');
-     
-     const objectID = ObjectId.createFromHexString(id)
-
-     return colecao.updateOne({_id: new ObjectId(objectID)}, {$set: newPost})   
+    // Seleciona o banco de dados 'imersao2024'
+    const db = conex.db('imersao2024');
+    // Seleciona a coleção 'seriados' dentro do banco de dados
+    const colecao = db.collection('posts');
     
+    // Converte o ID de string para um objeto ObjectId do MongoDB
+    const objectID = ObjectId.createFromHexString(id);
+
+    // Atualiza um documento na coleção com o ID especificado
+    return colecao.updateOne({_id: new ObjectId(objectID)}, {$set: newPost}) 
 }
