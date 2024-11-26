@@ -8,29 +8,29 @@ const conexao = await conectarAoBanco(process.env.STRING_CONEXAO);
 
 // Função assíncrona para obter todos os dados de uma coleção específica do banco de dados
 export async function getAlldados() {
-    // Seleciona o banco de dados 'imersao2024'
-    const db = conexao.db('imersao2024');
-    // Seleciona a coleção 'seriados' dentro do banco de dados
-    const colecao = db.collection('posts');
+    // Seleciona o banco de dados
+    const db = conexao.db(process.env.DB_NAME);
+    // Seleciona a coleção dentro do banco de dados
+    const colecao = db.collection(process.env.DB_COLECAO);
     // Executa uma consulta para encontrar todos os documentos da coleção e retorna um array com os resultados
     return colecao.find().toArray();
 }
 
 export async function criaPost(novoPost) {
-    // Seleciona o banco de dados 'imersao2024'
-    const db = conexao.db('imersao2024');
-    // Seleciona a coleção 'seriados' dentro do banco de dados
-    const colecao = db.collection('posts');
+    // Seleciona o banco de dados
+    const db = conexao.db(process.env.DB_NAME);
+    // Seleciona a coleção dentro do banco de dados
+    const colecao = db.collection(process.env.DB_COLECAO);
     
     // Insere um novo documento (post) na coleção
     return colecao.insertOne(novoPost)
 }
 
 export async function updatePost(id, newPost) {
-    // Seleciona o banco de dados 'imersao2024'
-    const db = conex.db('imersao2024');
-    // Seleciona a coleção 'seriados' dentro do banco de dados
-    const colecao = db.collection('posts');
+    // Seleciona o banco de dados 
+    const db = conex.db(process.env.DB_NAME);
+    // Seleciona a coleção dentro do banco de dados
+    const colecao = db.collection(process.env.DB_COLECAO);
     
     // Converte o ID de string para um objeto ObjectId do MongoDB
     const objectID = ObjectId.createFromHexString(id);
