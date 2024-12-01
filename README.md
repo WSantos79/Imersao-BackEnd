@@ -1,4 +1,4 @@
-# Imersão BackEnd
+# Imersão BackEnd InstaBytes
 
 Este repositório contém o projeto desenvolvido durante a **Imersão BackEnd Alura**, com foco no aprendizado de conceitos fundamentais de desenvolvimento back-end utilizando Node.js, Express. MongoDB e outras tecnologias.
 
